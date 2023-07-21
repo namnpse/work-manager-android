@@ -11,7 +11,7 @@ class DownloadImageApplication: Application() {
         super.onCreate()
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-                "download_image_channel",
+                WorkerImageKeys.DOWNLOAD_IMAGE_CHANNEL,
                 "Image download",
                 NotificationManager.IMPORTANCE_HIGH,
             )
